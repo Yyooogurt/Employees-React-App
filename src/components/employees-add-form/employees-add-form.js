@@ -3,19 +3,18 @@ import "./employees-add-form.css";
 const EmployeesAddForm = () => {
     return (
         <div className="app-add-form">
-            <h3>Добавьте нового сотрудника</h3>
+            <h3>Add a new employee</h3>
             <form
-                className="add-form d-flex">
+                className="add-form">
                 <input type="text"
-                    className="form-control new-post-label"
-                    placeholder="Как его зовут?" />
+                    className="form-control"
+                    placeholder="Name" />
                 <input type="number"
-                    className="form-control new-post-label"
-                    placeholder="З/П в $?" />
+                    className="form-control"
+                    placeholder="Salary in $?" />
 
                 <button type="submit"
                         className="btn btn-outline-light">
-                    Добавить
                 </button>
             </form>
         </div>

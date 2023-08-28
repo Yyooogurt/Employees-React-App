@@ -1,14 +1,73 @@
-.app-add-form {
-    padding: 25px;
-    background: rgb(104, 104, 247);
-    color: #fff;
+.app-add-form h3{
+    color: #000;
+    font-size: 34px;
+    font-weight: 700;
 }
 
+
 .add-form {
-    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+    margin-top: 22px;
 }
 
 .add-form input {
-    width: 350px;
-    margin-right: 20px;
+    border-radius: 14px;
+    border: 2px solid #6451D9;
+    background: #FFF;
+    padding: 11px 30px;
+    width: 100%;
+    max-width: 150px;
+    color: #6C6C6C;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.btn-outline-light {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    background: #6451D9;
+    border-radius: 50%;
+}
+.btn-outline-light::before,
+.btn-outline-light::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 27px;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.btn-outline-light::before {
+    width: 5px;
+    height: 27px;
+}
+
+@media (max-width: 660px) {
+    .add-form {
+        flex-direction: column;
+    }
+
+    .app-add-form h3 {
+        font-size: 24px;
+    }
+
+    .add-form input {
+        max-width: calc(100% - 44px);
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+
+    .btn-outline-light {
+        border-radius: 25px;
+        width: 100%;
+        max-width: 100%;
+    }
 }

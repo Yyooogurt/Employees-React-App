@@ -2,9 +2,84 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fff;
 }
+
 .btn-group {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    overflow: auto;
+}
+
+.btn-group-icons {
+    gap: 15px;
+    margin-left: 25px;
+}
+
+.btn {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 208px;
+    width: 100%;
+    padding: 14px 15px;
+    border-radius: 25px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn-light {
+    white-space: nowrap;
+    background: transparent;
+    color: #fff;
+}
+
+.btn-star,
+.btn-cookie,
+.btn-trash {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-star:active,
+.btn-cookie:active,
+.btn-trash:active {
+    opacity: 0.5;
+}
+
+.list-group-item-input {
+    max-width: 100px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
+}
+
+@media (max-width: 660px) {
+    .list-group-item,
+    .list-group-item-input {
+        font-size: 14px;
+    }
+    .list-group-item-input {
+        max-width: 60px;
+    }
 }
