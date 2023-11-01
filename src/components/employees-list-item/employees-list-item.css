@@ -9,6 +9,16 @@
     padding-bottom: 15px;
     border-bottom: 2px solid #fff;
 }
+.list-group-item.increase,
+.list-group-item.increase .list-group-item-input {
+    color: #ffc955;
+    font-weight: 500;
+}
+
+.list-group-item-label {
+    user-select: none;
+    cursor: pointer;
+}
 
 .btn-group {
     display: flex;
@@ -23,6 +33,7 @@
 }
 
 .btn {
+    user-select: none;
     color: #000;
     font-size: 20px;
     font-weight: 600;
@@ -46,6 +57,14 @@
     color: #fff;
 }
 
+.btn-star {
+    opacity: 0;
+}
+
+.btn-star.like {
+    opacity: 1;
+}
+
 .btn-star,
 .btn-cookie,
 .btn-trash {
@@ -58,7 +77,7 @@
     transition: opacity 0.2s;
 }
 
-.btn-star:active,
+
 .btn-cookie:active,
 .btn-trash:active {
     opacity: 0.5;
