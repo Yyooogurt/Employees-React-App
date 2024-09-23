@@ -23,7 +23,7 @@ class EmployeesListItem extends Component {
     }
 
     render () {
-        const {name, salary} = this.props;
+        const {name, salary, onDelete} = this.props;
         const {increase, like} = this.state;
 
         let classNames = 'list-group-item';
@@ -43,7 +43,7 @@ class EmployeesListItem extends Component {
                 <div className="btn-group btn-group-icons">
                     <div className={classNamesStar}>⭐️</div>
                     <button onClick={this.onIncrease} className="btn-cookie" type="button">🍪</button>
-                    <button className="btn-trash" type="button">🗑</button>
+                    <button className="btn-trash" type="button" onClick={onDelete}>🗑</button>
                 </div>
             </li>
         )
