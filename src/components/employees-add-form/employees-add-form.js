@@ -18,8 +18,15 @@ class EmployeesAddForm extends Component {
     };
 
     onSubmit = (e) => {
+        const { name, salary } = this.state;
         e.preventDefault();
-        this.props.onAdd(this.state.name, this.state.salary);
+
+        if (name.length === 0 || salary.length === 0) {
+            alert("Please fill in all fields");
+            return;
+        }
+
+        this.props.onAdd(name, salary);
         this.setState({
             name: "",
             salary: "",
