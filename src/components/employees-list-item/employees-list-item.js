@@ -1,7 +1,7 @@
 import "./employees-list-item.css";
 
 const EmployeesListItem = (props) => {
-    const { name, salary, onDelete, onToggleProp, increase, like } = props;
+    const { name, salary, onDelete, onToggleProp, increase, rise } = props;
 
     let classNames = "list-group-item";
     if (increase) {
@@ -9,7 +9,7 @@ const EmployeesListItem = (props) => {
     }
 
     let classNamesStar = "btn-star";
-    if (like) {
+    if (rise) {
         classNamesStar += " like";
     }
 
